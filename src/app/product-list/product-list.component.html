@@ -1,0 +1,42 @@
+
+<div id="cat">
+<h2 id="Category">Categories</h2>
+
+
+<table >
+  <tbody>
+    <tr>
+<a href=>posters</a>
+</tr>
+<tr>
+<a href>lights</a>
+</tr>
+<tr>
+<a href id="tb1">accessories</a>
+</tr>
+  </tbody>
+</table>
+</div>
+  <h2 id="prs">All Products</h2>
+
+  <div *ngFor="let product of products" class="col">
+  <div class="items">
+  <h3>
+    <a href= "{{ product.link }}">
+      {{ product.name }}
+    </a>
+  </h3>
+
+  <img src="{{product.img}}" style = " display: block; margin-left: auto;
+  margin-right: auto; 
+  width: 180px;" alt="">
+
+  <p *ngIf="product.description">
+    Description: {{ product.description }}
+  </p>
+
+  <button type="button" (click)="share()">
+    Share
+  </button>
+  </div>
+</div>

@@ -1,0 +1,194 @@
+/* Global Styles */
+
+* {
+  font-family: 'Roboto', Arial, sans-serif;
+  color: #616161;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+router-outlet + *  {
+  padding: 0 16px;
+}
+
+/* Text */
+
+h1 {
+  font-size: 33px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h1, h2 {
+  font-weight: lighter;
+}
+
+p {
+  font-size: 11px;
+}
+
+#prs {
+  background-color: #7c6060;
+  color:white;
+  font-size: 22px;
+  width: 90%;
+  padding-left: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-family:monospace;
+  margin-top: 10px;
+  margin: auto;
+}
+
+#Category {
+  color: #330808;
+  margin-bottom: 20px;
+  background-color: #bd9f9f;
+  width: max-content;
+  height: 5px;
+}
+
+#cat {
+  margin-left: 8%;
+  margin-bottom: 10px;
+}
+
+/* Hyperlink */
+
+a {
+  cursor: pointer;
+  color: #7c6060;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+/* Input */
+
+input {
+  font-size: 14px;
+  border-radius: 2px;
+  padding: 8px;
+  margin-bottom: 16px;
+  border: 1px solid #BDBDBD;
+}
+
+label {
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 4px;
+  display: block;
+  text-transform: uppercase;
+}
+
+/* Button */
+.button, button {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 16px;
+  border-radius: 11px;
+  font-size: 14px;
+  cursor: pointer;
+  background-color: #861010;
+  color: white;
+  border: none;
+}
+
+.button:hover, button:hover {
+  opacity: 0.8;
+  font-weight: normal;
+}
+
+.button:disabled, button:disabled {
+  opacity: 0.5;
+  cursor: auto;
+}
+
+/* Fancy Button */
+
+.fancy-button {
+  background-color: rgb(179, 145, 145);
+  color: #330808;
+}
+
+
+/* Top Bar */
+
+app-top-bar {
+  width: 80%;
+  height: 80px;
+  margin: auto;
+  margin-top: 20px;
+  background-color: #833333;
+  padding: 20px;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items:center;
+}
+
+app-top-bar h1 {
+  color: white;
+  margin: 0;
+  font-family: impact;
+}
+
+app-top-bar input[type=text] {
+  margin-right: 5px;
+  border: 3px solid rgb(179, 145, 145);
+  border-radius: 11px;
+  margin-top: 15px;
+  font-size:15px;
+  width: 70%;
+  padding: 5px;
+}
+/* Checkout Cart, Shipping Prices */
+
+.cart-item, .shipping-item {
+  width: 60%;
+  min-width: 100px;
+  max-width: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px 32px;
+  margin-bottom: 20px;
+  border-radius: 3px;
+  background-color: #bd9f9f;
+}
+
+.col {
+  background-color: #e2d8d8;
+  position:static;
+  width:70%;
+  margin:auto;
+  padding-bottom: 10px;
+  padding-left: 3px;
+  padding-right: 3px;
+  border-radius: 4px;
+}
+
+#routers {
+  padding-top: 15px;
+  background-color: #e9d3d3c2;
+  padding-bottom: 15px;
+}
+/*
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+*/
